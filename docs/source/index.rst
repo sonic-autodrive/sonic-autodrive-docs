@@ -21,6 +21,7 @@
 --------
 
 .. toctree::
+   :maxdepth: 2
 
    hardware/index
    License

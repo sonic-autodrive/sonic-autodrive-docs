@@ -17,10 +17,10 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    # 'recommonmark',
-    # 'sphinx_markdown_tables',
     'myst_parser',
 ]
+
+html_static_path = ['hardware']
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
