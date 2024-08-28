@@ -47,10 +47,10 @@ latex_elements = {
 #     '.md': 'recommonmark.parser.CommonMarkParser',
 # }
 
-# source_suffix = ['.rst', '.md']
+source_suffix = ['.rst', '.md']
 
-source_suffix = {
-    '.rst': 'restructuredtext',
-    '.md': 'markdown',
-}
+# source_suffix = {
+#     '.rst': 'restructuredtext',
+#     '.md': 'markdown',
+# }
 
