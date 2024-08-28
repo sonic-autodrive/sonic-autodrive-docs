@@ -9,9 +9,8 @@
 .. toctree::
    .. :maxdepth: 2
 
-   test
    1_HW_reference_hw
-   .. 2_HW_传感器设计方案
-   .. 3_HW_硬件集成方案
-   .. 4_HW_传感器时间同步方案
+   2_HW_传感器设计方案
+   3_HW_硬件集成方案
+   4_HW_传感器时间同步方案
 
