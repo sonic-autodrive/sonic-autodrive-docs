@@ -7,7 +7,8 @@
 ==========================================
 
 .. toctree::
-   :maxdepth: 2
+   .. :maxdepth: 2
+
    test
    1_HW_reference_hw
    .. 2_HW_传感器设计方案

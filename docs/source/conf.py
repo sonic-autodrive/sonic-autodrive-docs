@@ -19,6 +19,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'recommonmark',
     'sphinx_markdown_tables',
+    'myst_parser',
 ]
 
 intersphinx_mapping = {
@@ -42,8 +43,14 @@ latex_elements = {
     'preamble': '\\usepackage[UTF8]{ctex}\n',
 }
 
-source_parsers = {
-    '.md': 'recommonmark.parser.CommonMarkParser',
+# source_parsers = {
+#     '.md': 'recommonmark.parser.CommonMarkParser',
+# }
+
+# source_suffix = ['.rst', '.md']
+
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
 }
 
-source_suffix = ['.rst', '.md']
