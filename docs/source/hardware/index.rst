@@ -8,8 +8,8 @@
 
 .. toctree::
    :maxdepth: 2
-   1_HW_reference_hw.md
-   2_HW_传感器设计方案.md
-   3_HW_硬件集成方案.md
-   4_HW_传感器时间同步方案.md
+   1_HW_reference_hw
+   2_HW_传感器设计方案
+   3_HW_硬件集成方案
+   4_HW_传感器时间同步方案
 
