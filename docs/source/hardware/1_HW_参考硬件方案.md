@@ -9,7 +9,7 @@
 <!-- <p align="center">
   <img src="imgs/image_rwx.png" alt="任我行无人车" width="70%" height="70%">
 </p> -->
-![任我行无人车](imgs/image_rwx.png){ width=70% height=70% }
+![任我行无人车](imgs/image_rwx.png)
 
 
 - 以[无人售货车Wedrive S3](http://www.wedrive-ai.com/product/detail/id/15.html)为例，车辆配备了多种传感器（激光雷达、超声波雷达、相机、组合惯导）和计算单元。
@@ -33,9 +33,10 @@
 
 - 采用[安凯 E6](https://www.ankai.com)作为底盘框架。安凯 E6 是一款具有高稳定性和高安全性的电动公交车，可承载人数为18人（9座位+9站立），适用于城市公共交通和其他商业用途。基于该车辆，设计一整套的传感器、计算单元等硬件方案，用于形智自动驾驶的开发、系统部署与应用。
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_ak.png" alt="传感器部署示意图" width="70%" height="70%">
-</p>
+</p> -->
+![自行搭建硬件示意图](imgs/image_ak.png)
 
 ### 硬件方案
 
@@ -45,9 +46,10 @@
 - 定位方面采用广州导远电子INS 570D的组合惯导设备，位于车辆后上方。
 - 传感器的部署位置示意图如下：
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_sensors.png" alt="传感器部署示意图" width="45%" height="45%">
-</p>
+</p> -->
+![传感器部署示意图](imgs/image_sensors.png)
 
 | 参考硬件平台 | 详细信息                          | 用途 |
 |---------------------|------------------------|-----------|
