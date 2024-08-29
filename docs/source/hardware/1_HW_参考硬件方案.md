@@ -6,9 +6,11 @@
 
 - 成熟硬件平台可以直接购买，推荐[任我行无人车](http://www.wedrive-ai.com/index)。
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_rwx.png" alt="任我行无人车" width="70%" height="70%">
-</p>
+</p> -->
+![任我行无人车](imgs/image_rwx.png){ width=70% height=70% }
+
 
 - 以[无人售货车Wedrive S3](http://www.wedrive-ai.com/product/detail/id/15.html)为例，车辆配备了多种传感器（激光雷达、超声波雷达、相机、组合惯导）和计算单元。
 - 车辆已预装Ubuntu 20.04操作系统和ROS noetic开发环境。
