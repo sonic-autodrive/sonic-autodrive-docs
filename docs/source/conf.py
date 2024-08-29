@@ -20,7 +20,7 @@ extensions = [
     'myst_parser',
 ]
 
-html_static_path = ['hardware']
+# html_static_path = ['hardware']
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
