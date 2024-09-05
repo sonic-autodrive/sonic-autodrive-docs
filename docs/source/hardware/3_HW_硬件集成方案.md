@@ -69,7 +69,7 @@
 <!-- <p align="center">
   <img src="imgs/image_wire.png" alt="设备连接线缆" width="60%" height="60%">
 </p> -->
-![设备连接](imgs/image_connect.png)
+![设备连接](imgs/image_wire.png)
 
 ### 设备连接接口
 
