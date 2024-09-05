@@ -5,9 +5,10 @@
 ## 技术原理
 时间同步的目的是使得不同设备之间共享计时标准。EE1588协议，又称PTP（precise time protocol，精确时间协议），可以达到亚微秒级别时间同步精度，于2002年发布version1，2008年发布version2。IEEE1588 协议的同步原理，所提出的Delay Request-Response Mechanism（延时响应机制），如下图所示，同步对象包括主时钟和从时钟，主时钟提供基准时间，从时钟通过与主时钟之间的通信，确定二者之间的时间偏差。
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_ptp.png" alt="ptp时间同步" width="60%" height="60%">
-</p>
+</p> -->
+![ptp时间同步](imgs/image_ptp.png)
 
 ### PTP报文类型
 
@@ -42,17 +43,19 @@
 
 这样从时钟处就得到了t1,t2,t3,t4四个精确报文收发时间。从时钟可以通过t1,t2,t3,t4四个精确时间戳信息，得到主从时钟偏差offset和传输延时delay：
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_delay.png" alt="ptp时间同步" width="30%" height="30%">
-</p>
+</p> -->
+![ptp时间同步](imgs/image_delay.png)
 
 ## 传感器连接
 
 传感器连接见下图：
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_connect.png" alt="设备连接" width="70%" height="70%">
-</p>
+</p> -->
+![设备连接](imgs/image_connect.png)
 
 各个传感器设备的网络配置情况：
 
@@ -68,14 +71,17 @@
 <p align="center">
   <img src="imgs/image_route.png" alt="路由表" width="70%" height="70%">
 </p>
+![路由表](imgs/image_route.png)
+
 
 ## PTP时间同步工具的安装
 
 PPT时间同步的完成依赖于ptp4l算法工具，命令行安装方式：sudo apt install linuxptp，其配置文档有两个，分别位于/lib/systemd/system/ptp4l.service和/lib/systemd/system/phc2sys.service，主要修改项为下图中高亮标出的工控机网卡名。
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_net.png" alt="配置项" width="60%" height="60%">
-</p>
+</p> -->
+![配置项](imgs/image_net.png)
 
 配置修改完成后，系统中会出现两项基本服务：ptp4l 和 phc2sys，前者负责同步指定的网卡和PTP主时钟（XQ-500时间同步盒）的时间，后者负责同步该网卡和ubuntu系统的时间。需要手动启用这两项服务：
 
@@ -92,15 +98,17 @@ PTP时间同步的测试在工控机上进行。利用时间同步的日志，�
 
 - 确保ptp4l、phc2sys系统服务正常运行（systemctl命令查看服务运行状态），如下图所示：
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_ptp_status.png" alt="PTP状态" width="50%" height="50%">
-</p>
+</p> -->
+![PTP状态](imgs/image_ptp_status.png)
 
 - 登录视频采集卡（命令行执行 ssh root@192.168.2.11），查看ptp同步日志（命令行执行 tail -f /data/bsplog/ptp.log），确保时间同步正常。如下图所示，红框标注出了每个同步周期内最大的绝对时间偏差，单位为纳秒，框内可见最大绝对偏差为3744纳秒，即3.744微秒。该日志是实时刷新的。
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_time_offset.png" alt="时间偏差" width="50%" height="50%">
-</p>
+</p> -->
+![时间偏差](imgs/image_time_offset.png)
 
 - 命令行切换到本地路径："cd /home/user/workspace/ws_time_sync/analysis"，然后复制视频采集卡上的时间同步日志到本地："scp root@192.168.2.11:/data/bsplog/ptp.log ./"，输入密码
 
@@ -116,12 +124,15 @@ PTP时间同步的测试在工控机上进行。录制传感器的ROSBAG文件�
 
 - 执行python脚本分析rosbag文件：python3 analysis.py --bag-file 2024-06-26-17-24-47.bag --base-topic /top_lidar/rslidar_points，其中--bag-file后跟ROSBAG文件路径，--base-topic后跟激光雷达点云的话题名，执行结果如下：
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_rosbag.png" alt="rosbag" width="50%" height="50%">
-</p>
+</p> -->
+![rosbag](imgs/image_rosbag.png)
+
     
 - 测试结论记录如下：
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_rqt.png" alt="rqt" width="50%" height="50%">
-</p>
+</p> -->
+![rqt](imgs/image_rqt.png)

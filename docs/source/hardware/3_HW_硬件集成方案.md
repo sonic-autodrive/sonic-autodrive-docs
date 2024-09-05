@@ -48,9 +48,10 @@
 
 - 上述硬件在电器柜中连接关系如下。
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_hw_install.png" alt="电器柜示意图" width="80%" height="80%">
-</p>
+</p> -->
+![电器柜示意图](imgs/image_hw_install.png)
 
 ## 设备间数据连接
 
@@ -58,15 +59,17 @@
 
 - 各传感器与工控机网络连接关系如下图所示。交换机作为数据传输的中枢设备，与工控机、视频采集卡、时间同步盒、激光雷达、安全网关通过千兆网线进行数据交换，定位设备（组合惯导）则通过对应信号协议的串口线分别与工控机和时间同步盒相连。同时，由于激光雷达能够输出3.3V的触发控制信号，因此通过定制的触发控制线与视频采集卡相连。
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_connect.png" alt="设备连接" width="70%" height="70%">
-</p>
+</p> -->
+![设备连接](imgs/image_connect.png)
 
 - 其中，各个传感器与时间同步盒子的实物连接图及各个接口的说明如下图所示。
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_wire.png" alt="设备连接线缆" width="60%" height="60%">
-</p>
+</p> -->
+![设备连接](imgs/image_connect.png)
 
 ### 设备连接接口
 

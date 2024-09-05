@@ -6,15 +6,17 @@
 
 - 针对无人巴士，为保障车辆周围360°视野覆盖，并考虑到实际应用，选择了8个不同视野范围的相机安装在车辆周围。
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_camera.png" alt="相机覆盖示意图" width="60%" height="60%">
-</p>
+</p> -->
+![相机覆盖示意图](imgs/image_camera.png)
 
 - 8个相机对应的安装位置示意图与型号如下。
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_cam_install.png" alt="传感器部署示意图" width="45%" height="45%">
-</p>
+</p> -->
+![传感器部署示意图](imgs/image_cam_install.png)
 
 | 位置       | 用途         | 型号                         | 水平视场 |
 |------------|--------------|------------------------------|----------|
@@ -28,29 +30,33 @@
 
 - SG8S-AR0820C-5300-G2A-Hxxx系列尺寸如下。
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_cam_SG8S.png" alt="SG8S-AR0820C-5300相机参数" width="70%" height="70%">
-</p>
+</p> -->
+![SG8S-AR0820C-5300相机参数](imgs/image_cam_SG8S.png)
 
 - SG3S-ISX031C-GMSL2F-Hxxx系列尺寸如下。
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_cam_SG3S.png" alt="SG8S-AR0820C-5300相机参数" width="70%" height="70%">
-</p>
+</p> -->
+![SG8S-AR0820C-5300相机参数](imgs/image_cam_SG3S.png)
 
 ## 激光雷达
 
 - 针对无人巴士，为保障车辆周围360°视野覆盖，并考虑到实际应用，选择了5个不同视野范围的激光雷达安装在车辆周围。选择[速腾Robosense](https://www.robosense.ai/index)作为激光雷达供应商。
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_lidar.png" alt="传感器部署示意图" width="70%" height="70%">
-</p>
+</p> -->
+![传感器部署示意图](imgs/image_lidar.png)
 
 - 5个激光雷达对应的安装位置示意图与对应的型号如下。
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_lidar_install.png" alt="传感器部署示意图" width="40%" height="40%">
-</p>
+</p> -->
+![传感器部署示意图](imgs/image_lidar_install.png)
 
 | 位置       | 用途         | 型号                         | 
 |------------|--------------|------------------------------|
