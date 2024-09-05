@@ -68,9 +68,9 @@
 
 路由表见下图，此时工控机、采集卡和激光雷达全都能够相互ping通。
 
-<p align="center">
+<!-- <p align="center">
   <img src="imgs/image_route.png" alt="路由表" width="70%" height="70%">
-</p>
+</p> -->
 ![路由表](imgs/image_route.png)
 
 
